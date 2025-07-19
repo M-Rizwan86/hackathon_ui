@@ -1,0 +1,191 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+:root {
+  --primary: #B9FF66;
+  --secondary: #191A23;
+  --bg-color: #F3F3F3;
+}
+
+nav ul {
+  margin-left: 50px;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+.navbarbtn {
+  border: 1px solid black;
+}
+
+.hero-sec p {
+  font-size: 50px;
+}
+
+.Service-h h1 {
+  background-color: var(--primary);
+}
+
+.Service-h p {
+  font-size: 18px;
+}
+
+.container .row .card-sec1,
+.container .row .card-sec2 {
+  border: 2px solid black;
+  border-bottom: 5px solid black;
+  border-radius: 20px;
+}
+
+.container .row .card-sec2 {
+  background-color: var(--primary);
+}
+
+.container .row .card-sec1 {
+  background-color: var(--bg-color);
+}
+
+.container .row .card-sec2 h3 {
+  background-color: white;
+}
+
+.container .row .card-sec1 h3 {
+  background-color: var(--primary);
+}
+
+.accordion-button {
+  background-color: #F3F3F3;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #B9FF66 !important;
+  color: #000;
+}
+
+.accordion-button h1,
+.accordion-button h3,
+.accordion-body {
+  margin: 0;
+}
+
+.accordion-collapse.show + .accordion-body,
+.accordion-body.show {
+  background-color: #B9FF66 !important;
+}
+
+.accordion-body {
+  background-color: #B9FF66;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.rounded-top-20 {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding-bottom: 0%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+  nav ul {
+    margin-left: 0;
+  }
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  .hero-sec p.display-4 {
+    font-size: 2.5rem;
+  }
+  .hero-sec .lead {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-sec p.display-4 {
+    font-size: 1.8rem;
+  }
+  .hero-sec .lead {
+    font-size: 0.9rem;
+  }
+  .Service-h h3 {
+    font-size: 1.5rem;
+  }
+  .Service-h p {
+    font-size: 1rem;
+  }
+  .card-sec1 h3,
+  .card-sec2 h3 {
+    font-size: 1.2rem;
+  }
+  .card-sec1 h4,
+  .card-sec2 h4 {
+    font-size: 1rem;
+  }
+  .accordion-button h1 {
+    font-size: 1.5rem;
+  }
+  .accordion-button h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-sec p.display-4 {
+    font-size: 1.5rem;
+  }
+  .hero-sec .lead {
+    font-size: 0.8rem;
+  }
+  .container-form {
+    padding: 15px;
+  }
+  .rounded-top-20 {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+}
